@@ -1,0 +1,58 @@
+{
+  "name": "swagger-custom-badges",
+  "version": "1.0.0",
+  "description": "Swagger plugin to show role badges for operations",
+  "keywords": [
+    "swagger",
+    "swagger-ui",
+    "plugin",
+    "badges"
+  ],
+  "author": "Dexsper",
+  "license": "MIT",
+  "homepage": "https://github.com/Dexsper/swagger-custom-badges",
+  "bugs": {
+    "url": "https://github.com/Dexsper/swagger-custom-badges/issues"
+  },
+  "repository": "git@github.com:dexsper/swagger-custom-badges.git",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc && babel src --out-dir dist --extensions \".ts,.tsx\"",
+    "build:types": "tsc --emitDeclarationOnly",
+    "prepublishOnly": "npm run build",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "peerDependencies": {
+    "swagger-ui-dist": "5.21.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.0",
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-typescript": "^7.22.0",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/cz-commitlint": "^19.8.1",
+    "commitizen": "^4.3.1",
+    "husky": "^9.1.7",
+    "inquirer": "^9.3.7",
+    "prettier": "3.6.2",
+    "typescript": "^5.9.2"
+  }
+}
