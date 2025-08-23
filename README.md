@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Downloads](https://img.shields.io/npm/dt/swagger-custom-badges.svg)](https://www.npmjs.com/package/swagger-custom-badges)
 
-A Swagger UI plugin that displays custom badges for API operations based on OpenAPI extension fields.
+A Swagger UI plugin that displays custom badges for API operations based on [OpenAPI extension fields](https://spec.openapis.org/oas/v3.1.0.html#specification-extensions).
 
 ![Screenshot](./preview.png)
 
